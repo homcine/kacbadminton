@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #eef2eb;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 100%;
+
+    max-width: 380px;
+
+    background: #ffffff;
+
+    padding: 52px 28px 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.10);
+
+    /*
+       Arched plaque shape
+    */
+    border-radius:
+        48% 48% 20px 20px /
+        24% 24% 18px 18px;
+}
+
+
+/* Small green decoration */
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 55px;
+
+    height: 4px;
+
+    background: #16833b;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 105px;
+
+    height: 105px;
+
+    object-fit: contain;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   CLUB NAME
+========================= */
+
+h1 {
+    font-size: 24px;
+
+    color: #111111;
+
+    margin-bottom: 7px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   ARABIC NAME
+========================= */
+
+.arabic-name {
+    direction: rtl;
+
+    font-size: 16px;
+
+    color: #16833b;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENGLISH NAME
+========================= */
+
+.subtitle {
+    font-size: 13px;
+
+    color: #777777;
+
+    margin-bottom: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   SEASON
+========================= */
+
+.season {
+    display: inline-block;
+
+    background: #16833b;
+
+    color: white;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.line {
+    width: 45px;
+
+    height: 2px;
+
+    background: #16833b;
+
+    margin: 18px auto 10px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+.info {
+    margin: 10px 0 22px;
+}
+
+
+.info a,
+.info p {
+    display: block;
+
+    padding: 7px;
+
+    color: #333333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+.info a {
+    transition: 0.2s;
+}
+
+
+.info a:hover {
+    color: #16833b;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.buttons a {
+    display: block;
+
+    padding: 12px;
+
+    background: #111111;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.buttons a:hover {
+    transform: translateY(-1px);
+
+    opacity: 0.88;
+}
+
+
+/* Green registration button */
+
+.buttons .green {
+    background: #16833b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 22px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e8e8e8;
+
+    font-size: 10px;
+
+    color: #999999;
+
+    letter-spacing: 1.5px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 48px 22px 27px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .arabic-name {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 95px;
+
+        height: 95px;
+    }
+
+}
